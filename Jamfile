@@ -6,8 +6,8 @@ lib tomcrypt : [ glob-tree *.c : .git sha224.c sha384.c whirltab.c aes_tab.c sob
 	<define>LTC_SOURCE
 	# work around a bug in the clang toolset
 	# it uses the c++ compiler to build C code
-	<cxxflags>-std=c89
-	<cflags>-std=c89
+	<cxxflags>-std=c99
+	<cflags>-std=c99
 	: # default build
 	<link>static
 	: # usage requirements
