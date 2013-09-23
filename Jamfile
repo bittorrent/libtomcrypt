@@ -1,5 +1,5 @@
 
-lib tomcrypt : [ glob-tree *.c : .git sha224.c sha384.c whirltab.c aes_tab.c sober128tab.c dh_sys.c testprof demos ]
+lib tomcrypt : [ glob-tree *.c : .git sha224.c sha384.c whirltab.c aes_tab.c sober128tab.c dh_sys.c testprof demos whirltest.c whirlgen.c saferp_optimizer.c ]
 	: # requirements
 	<include>src/headers
 	<include>testprof

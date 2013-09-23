@@ -9,14 +9,24 @@
  */
 #include "tomcrypt.h"
 
+//static const oid_st rsa_oid = {
+//   .OIDlen = 7,
+//   .OID = { 1, 2, 840, 113549, 1, 1, 1  },
+//};
+
 static const oid_st rsa_oid = {
-   .OIDlen = 7,
-   .OID = { 1, 2, 840, 113549, 1, 1, 1  },
+   { 1, 2, 840, 113549, 1, 1, 1  },
+   7
 };
 
+//static const oid_st dsa_oid = {
+//   .OIDlen = 6,
+//   .OID = { 1, 2, 840, 10040, 4, 1  },
+//};
+
 static const oid_st dsa_oid = {
-   .OIDlen = 6,
-   .OID = { 1, 2, 840, 10040, 4, 1  },
+   { 1, 2, 840, 10040, 4, 1  },
+   6
 };
 
 /*
